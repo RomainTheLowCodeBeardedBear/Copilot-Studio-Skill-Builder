@@ -7,6 +7,15 @@
 > creation date of this skill and re-verify the official Microsoft sources before treating any point
 > as current.
 
+## ⬇️ Download the skill
+
+[![Download latest](https://img.shields.io/github/v/release/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder?label=download%20skill&style=for-the-badge)](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases/latest/download/copilot-studio-prompt-skill-builder-v1.0.zip)
+
+- **Direct download (latest):** [`copilot-studio-prompt-skill-builder-v1.0.zip`](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases/latest/download/copilot-studio-prompt-skill-builder-v1.0.zip)
+- **All releases:** [Releases page](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases)
+
+Then, in Copilot Studio, go to **Build → Skills → Upload a skill** and import the ZIP.
+
 ---
 
 ## Why this project
