@@ -2,16 +2,16 @@
 
 **A personal, community-shared skill that helps you design, challenge, generate, and repair Microsoft Copilot Studio system prompts and skills — from a real use case and a proposed architecture.**
 
-> **Skill version:** V1.0 — **created on 6 August 2026.**
+> **Skill version:** V1.1 — **updated on 20 November 2026.**
 > Copilot Studio, its harnesses, its skills, and its billing evolve very quickly. Always check the
 > creation date of this skill and re-verify the official Microsoft sources before treating any point
 > as current.
 
 ## ⬇️ Download the skill
 
-[![Download latest](https://img.shields.io/github/v/release/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder?label=download%20skill&style=for-the-badge)](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases/latest/download/copilot-studio-prompt-skill-builder-v1.0.zip)
+[![Download latest](https://img.shields.io/badge/download%20skill-v1.1-blue?style=for-the-badge)](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/raw/refs/heads/main/copilot-studio-prompt-skill-builder-v1.1.zip)
 
-- **Direct download (latest):** [`copilot-studio-prompt-skill-builder-v1.0.zip`](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases/latest/download/copilot-studio-prompt-skill-builder-v1.0.zip)
+- **Direct download (latest):** [`copilot-studio-prompt-skill-builder-v1.1.zip`](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/raw/refs/heads/main/copilot-studio-prompt-skill-builder-v1.1.zip)
 - **All releases:** [Releases page](https://github.com/RomainTheLowCodeBeardedBear/Copilot-Studio-Skill-Builder/releases)
 
 Then, in Copilot Studio, go to **Build → Skills → Upload a skill** and import the ZIP.
@@ -49,11 +49,13 @@ Given a use case and a macro architecture, the skill helps you:
 Core principle: **a complex use case does not automatically require a complex skill.** Complexity
 must answer a demonstrated need.
 
+For agents that use changing document collections, [the document source reference](skill/references/06-document-sources.md) shows how to describe a knowledge folder, handle revisions and cite the material used. BUILD can provide the fields to paste into Studio when a configuration handoff is requested.
+
 ## What's in this repository
 
 ```text
 Copilot-Studio-Skill-Builder/
-├── copilot-studio-prompt-skill-builder-v1.0.zip   # ready-to-upload skill package
+├── copilot-studio-prompt-skill-builder-v1.1.zip   # ready-to-upload skill package
 ├── skill/                                          # the same skill, unpacked and browsable
 │   ├── SKILL.md                                    # central method (modes, decisions, flow)
 │   ├── host-system-prompt.md                       # recommended host-agent system prompt
@@ -73,7 +75,7 @@ The new experience based on the GitHub Copilot harness supports skills imported 
 or as a ZIP with `SKILL.md` at the root.
 
 1. Open your host agent, go to **Build**, then **Skills**.
-2. Choose **Upload a skill** and import `copilot-studio-prompt-skill-builder-v1.0.zip`.
+2. Choose **Upload a skill** and import `copilot-studio-prompt-skill-builder-v1.1.zip`.
 3. Use `skill/host-system-prompt.md` as the base of your host-agent instructions.
 4. Add the tools you need for Microsoft research and file generation.
 5. Test one **DISCUSS**, one **BUILD**, and one **REVIEW / REPAIR** scenario.
@@ -91,7 +93,7 @@ available in that assistant.
 ## Validate a skill package
 
 ```bash
-python skill/scripts/validate_skill_package.py copilot-studio-prompt-skill-builder-v1.0.zip
+python skill/scripts/validate_skill_package.py copilot-studio-prompt-skill-builder-v1.1.zip
 # or validate an unpacked folder:
 python skill/scripts/validate_skill_package.py skill/
 ```

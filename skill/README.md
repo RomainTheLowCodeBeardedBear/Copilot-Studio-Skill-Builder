@@ -1,4 +1,4 @@
-# Copilot Studio Prompt & Skill Builder — V1.0
+# Copilot Studio Prompt & Skill Builder — V1.1
 
 This package helps an AI discuss, design, produce, and repair Microsoft Copilot Studio system prompts and skills.
 
@@ -22,6 +22,8 @@ The skill challenges only the important choices, then recommends and produces th
 - `templates/`: prompt and skill templates;
 - `scripts/validate_skill_package.py`: package validation;
 - `examples/`: request examples.
+
+For document-backed agents, [document source guidance](references/06-document-sources.md) covers folder selection, citations and ready-to-paste knowledge settings.
 
 ## Use in Copilot Studio
 

@@ -1,6 +1,6 @@
 # Copilot Studio Prompt & Skill Builder — User Guide
 
-> **Skill version:** V1.0 — **created on 6 August 2026.**
+> **Skill version:** V1.1 — **updated on 20 November 2026.**
 > Copilot Studio, its harnesses, its skills, and its billing evolve very quickly. Always check
 > the creation date of this skill and re-verify the official Microsoft sources before presenting
 > a point as current.
@@ -27,7 +27,7 @@ experience, and shared openly with the community.
 
 ## 1.1 — Purpose of the guide
 
-This guide presents the Copilot Studio Prompt & Skill Builder V1.0 package and how to use it to
+This guide presents the Copilot Studio Prompt & Skill Builder V1.1 package and how to use it to
 design, challenge, generate, or repair system prompts and skills intended for Microsoft Copilot
 Studio. It is aimed primarily at consultants who already have a use case and an initial vision of
 the architecture.
@@ -73,7 +73,7 @@ generation, or independent reuse.
 ## 2.1 — Tree structure
 
 ```text
-copilot-studio-prompt-skill-builder-v1.0.zip
+copilot-studio-prompt-skill-builder-v1.1.zip
 ├── SKILL.md
 ├── host-system-prompt.md
 ├── README.md
@@ -82,7 +82,8 @@ copilot-studio-prompt-skill-builder-v1.0.zip
 │   ├── 02-lessons-learned.md
 │   ├── 03-copilot-studio-rules.md
 │   ├── 04-output-and-file-contracts.md
-│   └── 05-microsoft-research-protocol.md
+│   ├── 05-microsoft-research-protocol.md
+│   └── 06-document-sources.md
 ├── templates/
 │   ├── system-prompt-template.md
 │   ├── simple-skill-template.md
@@ -102,6 +103,7 @@ copilot-studio-prompt-skill-builder-v1.0.zip
 | 01-design-method.md | Minimal questionnaire, architecture challenge, and decision tree. |
 | 02-lessons-learned.md | Encountered mistakes and rules meant to prevent repeating them. |
 | 04-output-and-file-contracts.md | JSON, tools, files, and deterministic validation contracts. |
+| 06-document-sources.md | Folder descriptions, evidence checks and configuration handoff for evolving collections. |
 | templates/ | Starting points for the produced prompts and skills. |
 | validate_skill_package.py | Structure check of a folder or a ZIP before delivery. |
 
@@ -126,7 +128,7 @@ with a YAML front matter including `name` and `description`.
 
 1. Create or open the host agent in the experience that supports skills.
 2. Open the Build tab, then the Skills component.
-3. Choose Upload a skill and import the V1.0 ZIP.
+3. Choose Upload a skill and import the V1.1 ZIP.
 4. Use host-system-prompt.md as the base for the host agent's general instructions.
 5. Add the tools required for Microsoft research and file generation, depending on the environment.
 6. Test at least one DISCUSS scenario, one BUILD, and one REVIEW / REPAIR.

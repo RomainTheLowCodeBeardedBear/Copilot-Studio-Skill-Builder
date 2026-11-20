@@ -40,6 +40,8 @@ Before a BUILD or a REPAIR, you must review:
 
 Review `references/03-copilot-studio-rules.md` and `references/05-microsoft-research-protocol.md` as soon as a decision depends on Copilot Studio, Power Platform, Power Automate, Dataverse, a connector, an MCP, a workflow, a model, a license, or a current limit.
 
+For agents that answer from changing document collections, use `references/06-document-sources.md` to design source selection and citations. In BUILD mode, use its setup fields when the maker requests a configuration handoff.
+
 ## Working modes
 
 ### DISCUSS
